@@ -12,25 +12,32 @@ def signup():
     req = request.json
     username = req['username']
     password = req['password']
-    email = req['email']
     db[username] = password
     ret = {
         'message': 'user created'
     }
-
+    print(db)
     return jsonify(ret), 200
 
 @app.route('/user.login', methods=['POST'])
 def login():
     req = request.json
-
-    email = req['email']
-    password = req['password']
-    
-    ret = {
-        'message': 'user logged in'
-    }
-
+    loginUsername = req['username']
+    loginPassword = req['password']
+    if loginUsername in db:
+        if loginPassword in db[loginUsername]:
+            ret = {
+                'message': 'user login successful'
+            }
+        else:
+            ret = {
+                'message': 'user login unsuccessful'
+            }
+    else:
+        ret = {
+                'message': 'user login unsuccessful'
+            }
+    print(db)
     return jsonify(ret), 200
 
 @app.route('/user.updateAccount', methods=['POST'])
@@ -46,11 +53,7 @@ def update_account():
 @app.route('/user.deleteAccount', methods=['POST'])
 def delete_account():
     req = request.json
-
-    user_id = req['user_id']
-
     ret = {
-        'message': 'user deleted'
+        'message': 'user updated'
     }
-
     return jsonify(ret), 200
