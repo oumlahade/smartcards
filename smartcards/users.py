@@ -10,7 +10,10 @@ from smartcards.database import db
 @app.route('/user.signup', methods=['POST'])
 def signup():
     req = request.json
-
+    username = req['username']
+    password = req['password']
+    email = req['email']
+    db[username] = password
     ret = {
         'message': 'user created'
     }
