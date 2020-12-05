@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B96D54F257C1C60006D064A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D54E257C1C60006D064A /* AppDelegate.swift */; };
+		2B96D551257C1C60006D064A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D550257C1C60006D064A /* SceneDelegate.swift */; };
+		2B96D553257C1C60006D064A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D552257C1C60006D064A /* ViewController.swift */; };
+		2B96D556257C1C60006D064A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B96D554257C1C60006D064A /* Main.storyboard */; };
+		2B96D558257C1C61006D064A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B96D557257C1C61006D064A /* Assets.xcassets */; };
+		2B96D55B257C1C61006D064A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B96D559257C1C61006D064A /* LaunchScreen.storyboard */; };
+		2B96D566257C1C61006D064A /* smartcardsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D565257C1C61006D064A /* smartcardsAppTests.swift */; };
+		2B96D571257C1C61006D064A /* smartcardsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D570257C1C61006D064A /* smartcardsAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B96D562257C1C61006D064A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B96D543257C1C60006D064A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B96D54A257C1C60006D064A;
+			remoteInfo = smartcardsApp;
+		};
+		2B96D56D257C1C61006D064A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B96D543257C1C60006D064A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B96D54A257C1C60006D064A;
+			remoteInfo = smartcardsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B96D54B257C1C60006D064A /* smartcardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartcardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B96D54E257C1C60006D064A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B96D550257C1C60006D064A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2B96D552257C1C60006D064A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B96D555257C1C60006D064A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B96D557257C1C61006D064A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B96D55A257C1C61006D064A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B96D55C257C1C61006D064A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B96D561257C1C61006D064A /* smartcardsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartcardsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B96D565257C1C61006D064A /* smartcardsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartcardsAppTests.swift; sourceTree = "<group>"; };
+		2B96D567257C1C61006D064A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B96D56C257C1C61006D064A /* smartcardsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartcardsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B96D570257C1C61006D064A /* smartcardsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartcardsAppUITests.swift; sourceTree = "<group>"; };
+		2B96D572257C1C61006D064A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B96D548257C1C60006D064A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B96D55E257C1C61006D064A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B96D569257C1C61006D064A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B96D542257C1C60006D064A = {
+			isa = PBXGroup;
+			children = (
+				2B96D54D257C1C60006D064A /* smartcardsApp */,
+				2B96D564257C1C61006D064A /* smartcardsAppTests */,
+				2B96D56F257C1C61006D064A /* smartcardsAppUITests */,
+				2B96D54C257C1C60006D064A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B96D54C257C1C60006D064A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B96D54B257C1C60006D064A /* smartcardsApp.app */,
+				2B96D561257C1C61006D064A /* smartcardsAppTests.xctest */,
+				2B96D56C257C1C61006D064A /* smartcardsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B96D54D257C1C60006D064A /* smartcardsApp */ = {
+			isa = PBXGroup;
+			children = (
+				2B96D54E257C1C60006D064A /* AppDelegate.swift */,
+				2B96D550257C1C60006D064A /* SceneDelegate.swift */,
+				2B96D552257C1C60006D064A /* ViewController.swift */,
+				2B96D554257C1C60006D064A /* Main.storyboard */,
+				2B96D557257C1C61006D064A /* Assets.xcassets */,
+				2B96D559257C1C61006D064A /* LaunchScreen.storyboard */,
+				2B96D55C257C1C61006D064A /* Info.plist */,
+			);
+			path = smartcardsApp;
+			sourceTree = "<group>";
+		};
+		2B96D564257C1C61006D064A /* smartcardsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B96D565257C1C61006D064A /* smartcardsAppTests.swift */,
+				2B96D567257C1C61006D064A /* Info.plist */,
+			);
+			path = smartcardsAppTests;
+			sourceTree = "<group>";
+		};
+		2B96D56F257C1C61006D064A /* smartcardsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B96D570257C1C61006D064A /* smartcardsAppUITests.swift */,
+				2B96D572257C1C61006D064A /* Info.plist */,
+			);
+			path = smartcardsAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B96D54A257C1C60006D064A /* smartcardsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B96D575257C1C61006D064A /* Build configuration list for PBXNativeTarget "smartcardsApp" */;
+			buildPhases = (
+				2B96D547257C1C60006D064A /* Sources */,
+				2B96D548257C1C60006D064A /* Frameworks */,
+				2B96D549257C1C60006D064A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartcardsApp;
+			productName = smartcardsApp;
+			productReference = 2B96D54B257C1C60006D064A /* smartcardsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B96D560257C1C61006D064A /* smartcardsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B96D578257C1C61006D064A /* Build configuration list for PBXNativeTarget "smartcardsAppTests" */;
+			buildPhases = (
+				2B96D55D257C1C61006D064A /* Sources */,
+				2B96D55E257C1C61006D064A /* Frameworks */,
+				2B96D55F257C1C61006D064A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B96D563257C1C61006D064A /* PBXTargetDependency */,
+			);
+			name = smartcardsAppTests;
+			productName = smartcardsAppTests;
+			productReference = 2B96D561257C1C61006D064A /* smartcardsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B96D56B257C1C61006D064A /* smartcardsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B96D57B257C1C61006D064A /* Build configuration list for PBXNativeTarget "smartcardsAppUITests" */;
+			buildPhases = (
+				2B96D568257C1C61006D064A /* Sources */,
+				2B96D569257C1C61006D064A /* Frameworks */,
+				2B96D56A257C1C61006D064A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B96D56E257C1C61006D064A /* PBXTargetDependency */,
+			);
+			name = smartcardsAppUITests;
+			productName = smartcardsAppUITests;
+			productReference = 2B96D56C257C1C61006D064A /* smartcardsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B96D543257C1C60006D064A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					2B96D54A257C1C60006D064A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					2B96D560257C1C61006D064A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2B96D54A257C1C60006D064A;
+					};
+					2B96D56B257C1C61006D064A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2B96D54A257C1C60006D064A;
+					};
+				};
+			};
+			buildConfigurationList = 2B96D546257C1C60006D064A /* Build configuration list for PBXProject "smartcardsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B96D542257C1C60006D064A;
+			productRefGroup = 2B96D54C257C1C60006D064A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B96D54A257C1C60006D064A /* smartcardsApp */,
+				2B96D560257C1C61006D064A /* smartcardsAppTests */,
+				2B96D56B257C1C61006D064A /* smartcardsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B96D549257C1C60006D064A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B96D55B257C1C61006D064A /* LaunchScreen.storyboard in Resources */,
+				2B96D558257C1C61006D064A /* Assets.xcassets in Resources */,
+				2B96D556257C1C60006D064A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B96D55F257C1C61006D064A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B96D56A257C1C61006D064A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B96D547257C1C60006D064A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B96D553257C1C60006D064A /* ViewController.swift in Sources */,
+				2B96D54F257C1C60006D064A /* AppDelegate.swift in Sources */,
+				2B96D551257C1C60006D064A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B96D55D257C1C61006D064A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B96D566257C1C61006D064A /* smartcardsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B96D568257C1C61006D064A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B96D571257C1C61006D064A /* smartcardsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B96D563257C1C61006D064A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B96D54A257C1C60006D064A /* smartcardsApp */;
+			targetProxy = 2B96D562257C1C61006D064A /* PBXContainerItemProxy */;
+		};
+		2B96D56E257C1C61006D064A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B96D54A257C1C60006D064A /* smartcardsApp */;
+			targetProxy = 2B96D56D257C1C61006D064A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B96D554257C1C60006D064A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B96D555257C1C60006D064A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B96D559257C1C61006D064A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B96D55A257C1C61006D064A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B96D573257C1C61006D064A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B96D574257C1C61006D064A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B96D576257C1C61006D064A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartcardsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackduke.smartcardsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B96D577257C1C61006D064A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartcardsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackduke.smartcardsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B96D579257C1C61006D064A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartcardsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackduke.smartcardsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartcardsApp.app/smartcardsApp";
+			};
+			name = Debug;
+		};
+		2B96D57A257C1C61006D064A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartcardsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackduke.smartcardsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartcardsApp.app/smartcardsApp";
+			};
+			name = Release;
+		};
+		2B96D57C257C1C61006D064A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartcardsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackduke.smartcardsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartcardsApp;
+			};
+			name = Debug;
+		};
+		2B96D57D257C1C61006D064A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartcardsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackduke.smartcardsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartcardsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B96D546257C1C60006D064A /* Build configuration list for PBXProject "smartcardsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B96D573257C1C61006D064A /* Debug */,
+				2B96D574257C1C61006D064A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B96D575257C1C61006D064A /* Build configuration list for PBXNativeTarget "smartcardsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B96D576257C1C61006D064A /* Debug */,
+				2B96D577257C1C61006D064A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B96D578257C1C61006D064A /* Build configuration list for PBXNativeTarget "smartcardsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B96D579257C1C61006D064A /* Debug */,
+				2B96D57A257C1C61006D064A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B96D57B257C1C61006D064A /* Build configuration list for PBXNativeTarget "smartcardsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B96D57C257C1C61006D064A /* Debug */,
+				2B96D57D257C1C61006D064A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B96D543257C1C60006D064A /* Project object */;
+}
