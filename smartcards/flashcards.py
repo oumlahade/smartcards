@@ -8,7 +8,7 @@ from smartcards.database import db
 
 
 @app.route('/flashcardSet.create', methods=['POST'])
-def signup():
+def create():
     req = request.json
 
     ret = {

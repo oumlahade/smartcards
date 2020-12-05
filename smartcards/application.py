@@ -11,9 +11,5 @@ app = Flask(__name__)
 app.debug = config.ENV_DEV
 
 # Import all files for proper routing here
-'''
-Like this:
-import smartcards.testing
 import smartcards.users
-import smartcards.listings
-'''
+import smartcards.flashcards
