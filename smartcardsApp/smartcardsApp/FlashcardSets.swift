@@ -31,23 +31,15 @@ class FlashcardSets: UIViewController , UITableViewDataSource {
         cell.delegate = self
         return cell
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.destination is FlashCardTable
-        {
-            let vc = segue.destination as? FlashCardTable
-            vc?.father = title!
-        }
-    }
    
 
 }
 
 extension FlashcardSets: CardSetTableViewCellDelegate {
     func didTapButton(with title: String) {
-        print(title)
+        //print(title)
         let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FlashCardTable") as! FlashCardTable
+        secondViewController.father = title
         self.navigationController!.pushViewController(secondViewController, animated: true)
     }
 }
