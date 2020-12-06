@@ -138,7 +138,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="S7x-z7-Nln" kind="show" id="tMb-Mt-ihG"/>
+                                    <action selector="signup:" destination="tLL-gy-pdx" eventType="touchUpInside" id="eD8-Zy-hhk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a new account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbd-8x-AMA">
@@ -170,10 +170,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Nd-I8-GcQ"/>
+                    <connections>
+                        <outlet property="password" destination="YM6-jY-00u" id="KAZ-Nt-LBu"/>
+                        <outlet property="username" destination="bZZ-M9-FUg" id="VHR-qL-PCY"/>
+                        <segue destination="S7x-z7-Nln" kind="show" identifier="signupSegue" id="7xS-6S-yHT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KtB-gV-HKq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="295"/>
+            <point key="canvasLocation" x="51" y="298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e4l-FI-uyt">
@@ -236,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naw-Df-deS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872" y="583"/>
+            <point key="canvasLocation" x="1870" y="583"/>
         </scene>
         <!--Flash Card Table-->
         <scene sceneID="ciM-I6-HL9">
@@ -489,7 +494,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pa4-YQ-3nl"/>
+        <segue reference="7xS-6S-yHT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

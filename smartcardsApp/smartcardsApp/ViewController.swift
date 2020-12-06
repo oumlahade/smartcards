@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         
         if (username != nil || password != nil) {
             print("User already logged in with credentials:")
-            print("\tUsername \(username)")
-            print("\tPassword \(password)")
+            print("\tUsername \(String(describing: username))")
+            print("\tPassword \(String(describing: password))")
             
             // switch to the flashcard screen
             let flashcardSetsViewController = self.storyboard?.instantiateViewController(withIdentifier: "flashcardSets") as! FlashcardSets
