@@ -16,8 +16,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-6D-zkD">
+                                <rect key="frame" x="20" y="514" width="374" height="79.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b80-41-6Hx">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ3-wi-L3t">
+                                        <rect key="frame" x="0.0" y="28.5" width="374" height="51"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="DHz-AP-dok"/>
+                                            <constraint firstAttribute="width" constant="374" id="UvI-mZ-0u6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Create Account">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tLL-gy-pdx" kind="show" id="cOX-pH-Zcj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uDp-Xm-3Z9">
+                                <rect key="frame" x="20" y="634" width="374" height="79.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enr-7e-P1O">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-Lz-JtK">
+                                        <rect key="frame" x="0.0" y="28.5" width="374" height="51"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="374" id="51a-Ef-3Mu"/>
+                                            <constraint firstAttribute="height" constant="51" id="fHv-nl-ZdA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Log in">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="aXN-yJ-Cm4" kind="show" id="7W7-l5-Tq2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to SmartCards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rt-aV-A8y">
-                                <rect key="frame" x="19.5" y="200" width="375" height="37"/>
+                                <rect key="frame" x="19.5" y="269" width="375" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="9kb-xP-JX0"/>
                                     <constraint firstAttribute="height" constant="37" id="CyU-eg-ASf"/>
@@ -26,46 +78,16 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ3-wi-L3t">
-                                <rect key="frame" x="20" y="362" width="374" height="51"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="RCw-hh-RKT"/>
-                                    <constraint firstAttribute="width" constant="374" id="UvI-mZ-0u6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Create Account">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="tLL-gy-pdx" kind="show" id="cOX-pH-Zcj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-Lz-JtK">
-                                <rect key="frame" x="20" y="493" width="374" height="51"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="51a-Ef-3Mu"/>
-                                    <constraint firstAttribute="height" constant="51" id="fHv-nl-ZdA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Already have an account? Log in">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="aXN-yJ-Cm4" kind="show" id="7W7-l5-Tq2"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="9Rt-aV-A8y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Or-Ko-2kO"/>
-                            <constraint firstItem="h9E-Lz-JtK" firstAttribute="top" secondItem="KJ3-wi-L3t" secondAttribute="bottom" constant="80" id="MDC-C9-kO1"/>
-                            <constraint firstItem="KJ3-wi-L3t" firstAttribute="top" secondItem="9Rt-aV-A8y" secondAttribute="bottom" constant="125" id="MwQ-Hk-nb2"/>
-                            <constraint firstItem="9Rt-aV-A8y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="cuq-ig-PjV"/>
-                            <constraint firstItem="KJ3-wi-L3t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kxb-bb-0PW"/>
-                            <constraint firstItem="h9E-Lz-JtK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w9R-NB-itC"/>
+                            <constraint firstItem="uDp-Xm-3Z9" firstAttribute="top" secondItem="DTu-6D-zkD" secondAttribute="bottom" constant="40.5" id="8Cv-Jg-6dx"/>
+                            <constraint firstItem="DTu-6D-zkD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Qs-v1-sga"/>
+                            <constraint firstItem="uDp-Xm-3Z9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HgL-I1-6Fs"/>
+                            <constraint firstItem="9Rt-aV-A8y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="cuq-ig-PjV"/>
+                            <constraint firstItem="DTu-6D-zkD" firstAttribute="top" secondItem="9Rt-aV-A8y" secondAttribute="bottom" constant="208" id="pfA-7o-U8O"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="61q-fH-6QD"/>
@@ -119,16 +141,32 @@
                                     <segue destination="S7x-z7-Nln" kind="show" id="tMb-Mt-ihG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a new account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbd-8x-AMA">
+                                <rect key="frame" x="19.5" y="132" width="375" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="6Nw-gs-iG8"/>
+                                    <constraint firstAttribute="height" constant="37" id="nHI-ZM-urB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o8x-r5-1Sd"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
+                            <constraint firstItem="Fbd-8x-AMA" firstAttribute="centerX" secondItem="0cJ-15-Z1Z" secondAttribute="centerX" id="669-uA-kOY"/>
                             <constraint firstItem="bZZ-M9-FUg" firstAttribute="centerX" secondItem="o8x-r5-1Sd" secondAttribute="centerX" id="7QU-Xp-FVC"/>
                             <constraint firstItem="YM6-jY-00u" firstAttribute="top" secondItem="bZZ-M9-FUg" secondAttribute="bottom" constant="58" id="ARB-I6-04i"/>
                             <constraint firstItem="JCF-In-fhd" firstAttribute="top" secondItem="YM6-jY-00u" secondAttribute="bottom" constant="98" id="PMe-z1-t2d"/>
                             <constraint firstItem="JCF-In-fhd" firstAttribute="centerX" secondItem="o8x-r5-1Sd" secondAttribute="centerX" id="Th1-FM-eCi"/>
+                            <constraint firstItem="Fbd-8x-AMA" firstAttribute="top" secondItem="o8x-r5-1Sd" secondAttribute="top" constant="88" id="Ufp-d9-ybb"/>
                             <constraint firstItem="bZZ-M9-FUg" firstAttribute="top" secondItem="o8x-r5-1Sd" secondAttribute="top" constant="201" id="UoX-Da-mfZ"/>
+                            <constraint firstItem="YM6-jY-00u" firstAttribute="centerX" secondItem="0cJ-15-Z1Z" secondAttribute="centerX" id="VDM-9B-cFd"/>
+                            <constraint firstItem="JCF-In-fhd" firstAttribute="centerX" secondItem="0cJ-15-Z1Z" secondAttribute="centerX" id="abK-Uo-Bya"/>
+                            <constraint firstItem="bZZ-M9-FUg" firstAttribute="top" secondItem="Fbd-8x-AMA" secondAttribute="bottom" constant="76" id="g8E-3w-LKD"/>
                             <constraint firstItem="YM6-jY-00u" firstAttribute="centerX" secondItem="o8x-r5-1Sd" secondAttribute="centerX" id="mu1-WE-BLk"/>
+                            <constraint firstItem="bZZ-M9-FUg" firstAttribute="centerX" secondItem="0cJ-15-Z1Z" secondAttribute="centerX" id="ssJ-P5-Ku3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Nd-I8-GcQ"/>
@@ -140,7 +178,7 @@
         <!--Navigation Controller-->
         <scene sceneID="e4l-FI-uyt">
             <objects>
-                <navigationController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" toolbarHidden="NO" id="S7x-z7-Nln" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" toolbarHidden="NO" id="S7x-z7-Nln" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="sN7-7I-sjh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BHO-lV-uDN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -161,7 +199,7 @@
         <!--Flashcard Sets-->
         <scene sceneID="aqn-hv-v4j">
             <objects>
-                <viewController id="uTB-tF-cpX" customClass="FlashcardSets" customModule="smartcardsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flashcardSets" id="uTB-tF-cpX" customClass="FlashcardSets" customModule="smartcardsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uph-mW-cK1" customClass="cred">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,29 +277,44 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVg-fh-fOa">
                                 <rect key="frame" x="77.5" y="469" width="259" height="51"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="AxA-Qi-DeA"/>
                                     <constraint firstAttribute="width" constant="259" id="wPa-dc-w7D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="Log in">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="S7x-z7-Nln" kind="show" id="pa4-YQ-3nl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUh-iX-xJZ">
+                                <rect key="frame" x="19.5" y="132" width="375" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="0eh-IH-mdi"/>
+                                    <constraint firstAttribute="height" constant="37" id="u8F-Vb-yfh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bvf-40-EUi"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
+                            <constraint firstItem="mpu-VV-LmR" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="1Dp-nq-Lsc"/>
                             <constraint firstItem="mpu-VV-LmR" firstAttribute="centerX" secondItem="Bvf-40-EUi" secondAttribute="centerX" id="2AN-Dm-6e6"/>
                             <constraint firstItem="mpu-VV-LmR" firstAttribute="top" secondItem="KeD-vi-xkY" secondAttribute="bottom" constant="58" id="5dN-nw-Bow"/>
+                            <constraint firstItem="OUh-iX-xJZ" firstAttribute="top" secondItem="Bvf-40-EUi" secondAttribute="top" constant="88" id="DYK-v8-qB2"/>
                             <constraint firstItem="KeD-vi-xkY" firstAttribute="centerX" secondItem="Bvf-40-EUi" secondAttribute="centerX" id="GYw-c8-WFj"/>
                             <constraint firstItem="dVg-fh-fOa" firstAttribute="centerX" secondItem="Bvf-40-EUi" secondAttribute="centerX" id="T5v-gj-fA1"/>
                             <constraint firstItem="KeD-vi-xkY" firstAttribute="top" secondItem="Bvf-40-EUi" secondAttribute="top" constant="201" id="bkw-Mf-1Ht"/>
                             <constraint firstItem="dVg-fh-fOa" firstAttribute="top" secondItem="mpu-VV-LmR" secondAttribute="bottom" constant="98" id="fDK-6Z-g8S"/>
+                            <constraint firstItem="dVg-fh-fOa" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="frH-IP-eQ6"/>
+                            <constraint firstItem="OUh-iX-xJZ" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="nLu-IY-Bc7"/>
+                            <constraint firstItem="KeD-vi-xkY" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="ol3-GG-w7A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mYV-Aj-N1I"/>
