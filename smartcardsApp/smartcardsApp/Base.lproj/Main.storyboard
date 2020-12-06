@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="980.35714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Credentials-->
         <scene sceneID="d2m-Bg-aei">
             <objects>
-                <viewController id="tLL-gy-pdx" sceneMemberID="viewController">
+                <viewController id="tLL-gy-pdx" customClass="Credentials" customModule="smartcardsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0cJ-15-Z1Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
