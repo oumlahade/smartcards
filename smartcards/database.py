@@ -2,4 +2,6 @@
 Holds the database information
 '''
 
-db = {}
+userDB = {}
+
+flashcardDB = {}

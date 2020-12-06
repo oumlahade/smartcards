@@ -19,17 +19,11 @@ class ViewController: UIViewController {
         
         if (username != nil || password != nil) {
             print("User already logged in with credentials:")
-            print("\tUsername \(String(describing: username))")
-            print("\tPassword \(String(describing: password))")
+            print("\tUsername \(username!)")
+            print("\tPassword \(password!)")
             
             // switch to the flashcard screen
-            let flashcardSetsViewController = self.storyboard?.instantiateViewController(withIdentifier: "flashcardSets") as! FlashcardSets
-            let navController = UINavigationController(rootViewController: flashcardSetsViewController)
-            navController.setToolbarHidden(false, animated: true)
-            navController.modalPresentationStyle = .fullScreen
-            navController.modalTransitionStyle = .crossDissolve
-
-            self.navigationController?.present(navController, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "authenticatedSegue", sender: nil)
         }
         else {
             print("User not logged in")

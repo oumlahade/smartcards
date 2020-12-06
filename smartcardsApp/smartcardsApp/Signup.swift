@@ -15,8 +15,6 @@ class Signup: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func signup(_ sender: Any) {
@@ -38,9 +36,11 @@ class Signup: UIViewController {
             // do request to see if username and password is valid
             
             // if username and password are valid:
+            print(user)
+            print(pass)
+            //defaults.set(user, forKey: "username")
+            //defaults.set(pass, forKey: "password")
             self.performSegue(withIdentifier: "signupSegue", sender: nil)
-            print(user)// defaults.set(user, forKey: "username")
-            print(pass)// defaults.set(pass, forKey: "password")
         }
     }
 
