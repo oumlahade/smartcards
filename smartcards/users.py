@@ -16,12 +16,11 @@ def signup():
         ret = {
             'message': 'username already taken'
         }
-        # Find out how to make them repick
-        
-    db[username] = password
-    ret = {
-        'message': 'user created'
-    }
+    else:       
+        db[username] = password
+        ret = {
+            'message': 'user created'
+        }
     print(db)
     return jsonify(ret), 200
 
