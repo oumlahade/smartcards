@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FlashCardSets: UIViewController {
+class FlashcardSets: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

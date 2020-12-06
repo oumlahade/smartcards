@@ -1,13 +1,13 @@
 //
-//  Credentials.swift
+//  LoginViewController.swift
 //  smartcardsApp
 //
-//  Created by Oum Lahade on 12/5/20.
+//  Created by Neel Runton on 12/6/20.
 //
 
 import UIKit
 
-class Credentials: UIViewController {
+class Login: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
