@@ -16,11 +16,11 @@ class FlashCardTable: UIViewController , UITableViewDataSource {
     var father: String = ""
     
     override func viewDidLoad() {
-        print(father)
         super.viewDidLoad()
         table.register(CardRowTableViewCell.nib(), forCellReuseIdentifier: CardRowTableViewCell.identifier)
         table.dataSource = self
-
+        navigationItem.title = father
+        print(father)
         // Do any additional setup after loading the view.
     }
     
