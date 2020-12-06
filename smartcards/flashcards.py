@@ -14,12 +14,13 @@ def create():
     '''
     req = request.json
     stackName = req['stackname']
-    if stackName in fcdb.keys():
+    username = req['username']
+    if stackName in fcdb[username].keys():
         ret = {
             'message': 'stack name already taken'
         }
     else:
-        fcdb[stackName] = {}
+        fcdb[username][stackName] = {}
         ret = {
             'message': 'flashcard set created'
         }
@@ -32,8 +33,9 @@ def deleteStack():
     '''
     req = request.json
     stackName = req['stackname']
-    if stackName in fcdb.keys():
-        del fcdb[stackName]
+    username = req['username']
+    if stackName in fcdb[username].keys():
+        del fcdb[username][stackName]
         ret = {
         'message': 'flashcard set deleted'
         }
@@ -51,10 +53,11 @@ def add():
     '''
     req = request.json
     stackName = req['stackname']
+    username = req['username']
     question = req['question']
     answer = req['answer']
-    if stackName in fcdb.keys():
-        fcdb[stackName][question] = answer
+    if stackName in fcdb[username].keys():
+        fcdb[username][stackName][question] = answer
         ret = {
             'message': 'flashcard added'
         }
@@ -72,32 +75,30 @@ def delete():
     '''
     req = request.json
     stackName = req['stackname']
+    username = req['username']
     question = req['question']
-    if (stackName in fcdb.keys()):
-        if (question in fcdb[stackName].keys()):
-            del fcdb[stackName][question]
+    if (stackName in fcdb[username].keys()):
+        if (question in fcdb[username][stackName].keys()):
+            del fcdb[username][stackName][question]
     ret = {
         'message': 'flashcard deleted'
     }
-    print(fcdb)
+    print(fcdb[username])
     return jsonify(ret), 200
 
 @app.route('/flashcardSet.displayStacks', methods=['POST'])
 def displayStacks():
     req = request.json
     stackName = req['stackname']
+    username = req['username']
     String = ""
-    print(fcData.keys())
-    for key in fcData.keys():
+    print(fcdb[username].keys())
+    for key in fcdb[username].keys():
         String = String + " " + key
 
 
     ret = {
-<<<<<<< HEAD
         "messages": String
-=======
-        "messages": fcdb.keys()
->>>>>>> 2a50f9d84951023cab8da79663291994f69a02b6
     }
     return jsonify(ret), 200
 
@@ -113,19 +114,16 @@ def displayCards():
     '''
     req = request.json
     stackName = req['stackname']
+    username = req['username']
     question = req['question']
     String = ""
-    for x in fcData[stackName]:
-        value = fcData[stackName][x]
-        key = get_key(value, fcData[stackName])
+    for x in fcdb[username][stackName]:
+        value = fcdb[username][stackName][x]
+        key = get_key(value, fcdb[username][stackName])
         String = String + key + ", " + value + "     "
 
 
     ret = {
-<<<<<<< HEAD
         "messages": String
-=======
-        "messages": fcdb[stackName][question]
->>>>>>> 2a50f9d84951023cab8da79663291994f69a02b6
     }
     return jsonify(ret), 200

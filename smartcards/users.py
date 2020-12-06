@@ -5,7 +5,7 @@ from flask import request, jsonify, abort
 
 from smartcards.application import app
 from smartcards.database import userDB as udb
-
+from smartcards.database import flashcardDB as fcdb
 
 @app.route('/user.signup', methods=['POST'])
 def signup():
@@ -18,6 +18,7 @@ def signup():
         }
     else:       
         udb[username] = password
+        fcdb[username] = {}
         ret = {
             'message': 'user created'
         }
@@ -63,6 +64,7 @@ def delete_account():
     if username in udb:
         if password in udb[username]:
             del udb[username]
+            del fcdb[username]
             ret = {
                 'message': 'user deletion successful'
             }
