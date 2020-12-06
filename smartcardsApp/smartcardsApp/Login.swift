@@ -35,7 +35,7 @@ class Login: UIViewController {
         }
         else {
             // do request to see if username and password is valid
-            let parameters = ["username":"nlahade", "password":"urmom"]
+            let parameters = ["username": user, "password": pass]
                     
             AF.request("http://quickstart-1603319439833.ue.r.appspot.com/user.login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                 .responseJSON { response in
