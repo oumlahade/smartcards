@@ -595,6 +595,9 @@
                                 <state key="normal" title="Edit Card">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mCh-gP-PE4" kind="show" id="OK1-4Z-vWW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnV-v7-6Vw">
                                 <rect key="frame" x="55" y="182" width="135.5" height="72"/>
@@ -686,6 +689,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="OK1-4Z-vWW"/>
         <segue reference="cLf-bX-0ww"/>
     </inferredMetricsTieBreakers>
     <resources>

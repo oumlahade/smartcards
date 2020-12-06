@@ -8,14 +8,17 @@
 import UIKit
 
 class Card: UIViewController {
+    
+    let data = ["Hello", "Library", "How are you?", "pants", "shoes"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        term.text = father
+        term.text = father[0]
         // Do any additional setup after loading the view.
+        def.text = father[1]
     }
     
-    var father: String = ""
+    var father: [String] = []
     
     @IBOutlet var term: UILabel!
     @IBOutlet var def: UILabel!

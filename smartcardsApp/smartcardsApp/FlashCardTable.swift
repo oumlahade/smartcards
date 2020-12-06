@@ -12,6 +12,7 @@ class FlashCardTable: UIViewController , UITableViewDataSource {
     @IBOutlet var table: UITableView!
     
     let data = ["hola", "biblioteca", "como estas", "pantalones", "zapatos"]
+    let vals = ["hola":"Hello", "biblioteca":"Library", "como estas":"How are you?", "pantalones":"pants", "zapatos":"shoes"]
     
     var father: String = ""
     
@@ -42,7 +43,7 @@ extension FlashCardTable: CardRowTableViewCellDelegate{
     func didTapButton(with title: String) {
         print(title)
         let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "card") as! Card
-        secondViewController.father = title
+        secondViewController.father = [title, vals[title]!]
         self.navigationController!.pushViewController(secondViewController, animated: true)
     }
 }
