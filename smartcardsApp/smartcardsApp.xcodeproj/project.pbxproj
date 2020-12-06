@@ -15,6 +15,9 @@
 		2B96D55B257C1C61006D064A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B96D559257C1C61006D064A /* LaunchScreen.storyboard */; };
 		2B96D566257C1C61006D064A /* smartcardsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D565257C1C61006D064A /* smartcardsAppTests.swift */; };
 		2B96D571257C1C61006D064A /* smartcardsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D570257C1C61006D064A /* smartcardsAppUITests.swift */; };
+		2B96D5DA257C6269006D064A /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D5D9257C6269006D064A /* Signup.swift */; };
+		2B96D5DF257C62A5006D064A /* FlashcardSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D5DE257C62A5006D064A /* FlashcardSets.swift */; };
+		973763D6257CA07E001121C7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973763D5257CA07E001121C7 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2B96D56C257C1C61006D064A /* smartcardsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartcardsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B96D570257C1C61006D064A /* smartcardsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartcardsAppUITests.swift; sourceTree = "<group>"; };
 		2B96D572257C1C61006D064A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B96D5D9257C6269006D064A /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		2B96D5DE257C62A5006D064A /* FlashcardSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSets.swift; sourceTree = "<group>"; };
+		973763D5257CA07E001121C7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				2B96D550257C1C60006D064A /* SceneDelegate.swift */,
 				2B96D552257C1C60006D064A /* ViewController.swift */,
 				2B96D554257C1C60006D064A /* Main.storyboard */,
+				973763D5257CA07E001121C7 /* Login.swift */,
+				2B96D5DE257C62A5006D064A /* FlashcardSets.swift */,
+				2B96D5D9257C6269006D064A /* Signup.swift */,
 				2B96D557257C1C61006D064A /* Assets.xcassets */,
 				2B96D559257C1C61006D064A /* LaunchScreen.storyboard */,
 				2B96D55C257C1C61006D064A /* Info.plist */,
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973763D6257CA07E001121C7 /* Login.swift in Sources */,
 				2B96D553257C1C60006D064A /* ViewController.swift in Sources */,
+				2B96D5DF257C62A5006D064A /* FlashcardSets.swift in Sources */,
 				2B96D54F257C1C60006D064A /* AppDelegate.swift in Sources */,
+				2B96D5DA257C6269006D064A /* Signup.swift in Sources */,
 				2B96D551257C1C60006D064A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
