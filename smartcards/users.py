@@ -21,7 +21,6 @@ def signup():
         ret = {
             'message': 'user created'
         }
-    print(udb)
     return jsonify(ret), 200
 
 @app.route('/user.login', methods=['POST'])
@@ -29,8 +28,9 @@ def login():
     req = request.json
     loginUsername = req['username']
     loginPassword = req['password']
+
     if loginUsername in udb:
-        if loginPassword in udb[loginUsername]:
+        if loginPassword == udb[loginUsername]:
             ret = {
                 'message': 'user login successful'
             }
@@ -42,7 +42,6 @@ def login():
         ret = {
                 'message': 'user login unsuccessful'
             }
-    print(udb)
     return jsonify(ret), 200
 
 @app.route('/user.updateAccount', methods=['POST'])
