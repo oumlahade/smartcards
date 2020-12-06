@@ -7,25 +7,39 @@
 
 import UIKit
 
-class FlashcardSets: UIViewController {
+class FlashcardSets: UIViewController , UITableViewDataSource {
 
+    @IBOutlet var table: UITableView!
+    
+    let data = ["First", "Second", "Third", "Fourth", "Fifth"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        table.register(CardSetTableViewCell.nib(), forCellReuseIdentifier: CardSetTableViewCell.identifier)
+        table.dataSource = self
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
     }
-    */
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier:  CardSetTableViewCell.identifier, for: indexPath) as! CardSetTableViewCell
+        cell.configure(with: data[indexPath.row])
+        cell.delegate = self
+        return cell
+    }
    
 
+}
+
+extension FlashcardSets: CardSetTableViewCellDelegate {
+    func didTapButton(with title: String) {
+        //print(title)
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FlashCardTable") as! FlashCardTable
+        secondViewController.father = title
+        self.navigationController!.pushViewController(secondViewController, animated: true)
+    }
 }
