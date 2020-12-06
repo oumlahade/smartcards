@@ -70,3 +70,22 @@ def delete():
     }
     print(fcData)
     return jsonify(ret), 200
+
+@app.route('/flashcardSet.displayStacks', methods=['POST'])
+def displayStacks():
+    req = request.json
+    stackName = req['stackname']
+    ret = {
+        "messages": fcData.keys()
+    }
+    return jsonify(ret), 200
+
+@app.route('/flashcardSet.displayCards', methods=['POST'])
+def displayCards():
+    req = request.json
+    stackName = req['stackname']
+    question = req['question']
+    ret = {
+        "messages": fcData[stackName][question]
+    }
+    return jsonify(ret), 200
