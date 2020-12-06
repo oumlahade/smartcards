@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class Login: UIViewController {
 
@@ -34,13 +35,36 @@ class Login: UIViewController {
         }
         else {
             // do request to see if username and password is valid
-            
-            // if username and password are valid:
-            print(user)
-            print(pass)
-            defaults.set(user, forKey: "username")
-            defaults.set(pass, forKey: "password")
-            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            let parameters = ["username":"nlahade", "password":"urmom"]
+                    
+            AF.request("http://quickstart-1603319439833.ue.r.appspot.com/user.login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+                .responseJSON { response in
+                    switch response.result {
+                        case .success(let value as [String: Any]):
+                            if (value["message"] as! String == "user login successful") {
+                                // if username and password are valid:
+                                print(user)
+                                print(pass)
+                                self.defaults.set(user, forKey: "username")
+                                self.defaults.set(pass, forKey: "password")
+                                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                            }
+                            else {
+                                let alert = UIAlertController(title: "Invalid Username or Password", message: "Your username or password is incorrect", preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                                self.present(alert, animated: true)
+                            }
+
+                        case .failure(let error):
+                            print(error)
+                            let alert = UIAlertController(title: "Server Error", message: "The server encountered an error. Please try again later", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                            self.present(alert, animated: true)
+
+                        default:
+                            fatalError("received non-dictionary JSON response")
+                    }
+                }
         }
     }
 }
