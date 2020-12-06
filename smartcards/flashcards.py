@@ -75,17 +75,35 @@ def delete():
 def displayStacks():
     req = request.json
     stackName = req['stackname']
+    String = ""
+    print(fcData.keys())
+    for key in fcData.keys():
+        String = String + " " + key
+
+
     ret = {
-        "messages": fcData.keys()
+        "messages": String
     }
     return jsonify(ret), 200
+
+def get_key(val, my_dict): 
+    for key, value in my_dict.items(): 
+         if val == value: 
+             return key 
 
 @app.route('/flashcardSet.displayCards', methods=['POST'])
 def displayCards():
     req = request.json
     stackName = req['stackname']
     question = req['question']
+    String = ""
+    for x in fcData[stackName]:
+        value = fcData[stackName][x]
+        key = get_key(value, fcData[stackName])
+        String = String + key + ", " + value + "     "
+
+
     ret = {
-        "messages": fcData[stackName][question]
+        "messages": String
     }
     return jsonify(ret), 200
