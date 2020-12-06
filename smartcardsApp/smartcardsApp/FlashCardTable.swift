@@ -3,7 +3,7 @@
 //  smartcardsApp
 //
 //  Created by Oum Lahade on 12/6/20.
-//
+// TODO: MAKE SURE TO RESET WHEN PAGE IS REVISITED
 
 import UIKit
 

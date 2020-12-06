@@ -209,29 +209,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flashcards go here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBf-gg-hYv">
-                                <rect key="frame" x="134.5" y="288" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-rr-NrW">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="633"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="ese-nx-WoL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="fwt-U2-e9E"/>
+                                    <constraint firstAttribute="height" constant="633" id="ush-xL-9FD"/>
+                                </constraints>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bE-5l-dbk">
+                                <rect key="frame" x="77.5" y="742" width="259" height="51"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="HeJ-nc-wyF"/>
+                                    <constraint firstAttribute="width" constant="259" id="flA-DG-ICV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Add Flashcard Set">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pu4-e4-2M6" kind="show" id="DI5-Ee-nXE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Ig-CH-2Th"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0Ig-CH-2Th" firstAttribute="bottom" secondItem="KE9-rr-NrW" secondAttribute="bottom" id="5bo-FG-nAc"/>
-                            <constraint firstItem="0Ig-CH-2Th" firstAttribute="trailing" secondItem="KE9-rr-NrW" secondAttribute="trailing" id="Byx-a3-Ha4"/>
-                            <constraint firstItem="KE9-rr-NrW" firstAttribute="leading" secondItem="0Ig-CH-2Th" secondAttribute="leading" id="JV1-2X-Im0"/>
-                            <constraint firstItem="sBf-gg-hYv" firstAttribute="centerX" secondItem="uph-mW-cK1" secondAttribute="centerX" id="LeC-fZ-Wcb"/>
-                            <constraint firstItem="KE9-rr-NrW" firstAttribute="top" secondItem="0Ig-CH-2Th" secondAttribute="top" id="Nvb-SF-G0P"/>
-                            <constraint firstItem="sBf-gg-hYv" firstAttribute="leading" secondItem="0Ig-CH-2Th" secondAttribute="leading" constant="134.5" id="PGe-wu-9W3"/>
-                            <constraint firstItem="0Ig-CH-2Th" firstAttribute="trailing" secondItem="sBf-gg-hYv" secondAttribute="trailing" constant="134.5" id="Vys-PI-NiL"/>
-                            <constraint firstItem="sBf-gg-hYv" firstAttribute="top" secondItem="0Ig-CH-2Th" secondAttribute="top" constant="200" id="eNP-k6-GJW"/>
-                            <constraint firstItem="0Ig-CH-2Th" firstAttribute="bottom" secondItem="sBf-gg-hYv" secondAttribute="bottom" constant="504" id="htx-6x-Cju"/>
+                            <constraint firstItem="7bE-5l-dbk" firstAttribute="centerX" secondItem="0Ig-CH-2Th" secondAttribute="centerX" id="7Ki-ZP-yMI"/>
+                            <constraint firstItem="KE9-rr-NrW" firstAttribute="centerX" secondItem="0Ig-CH-2Th" secondAttribute="centerX" id="PLx-Mk-KmC"/>
+                            <constraint firstItem="0Ig-CH-2Th" firstAttribute="bottom" secondItem="KE9-rr-NrW" secondAttribute="bottom" constant="92" id="eyo-3m-dLC"/>
+                            <constraint firstItem="KE9-rr-NrW" firstAttribute="top" secondItem="0Ig-CH-2Th" secondAttribute="top" id="gGx-CU-uRm"/>
+                            <constraint firstItem="7bE-5l-dbk" firstAttribute="top" secondItem="KE9-rr-NrW" secondAttribute="bottom" constant="21" id="pAh-8a-MBZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Flashcard Sets" id="UyE-Vo-ym5"/>
@@ -241,7 +251,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naw-Df-deS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="583"/>
+            <point key="canvasLocation" x="1869.5652173913045" y="582.58928571428567"/>
+        </scene>
+        <!--Flashcard Submission-->
+        <scene sceneID="usc-Fd-yKC">
+            <objects>
+                <viewController storyboardIdentifier="FlashcardSubmission" id="pu4-e4-2M6" customClass="FlashcardSubmission" customModule="smartcardsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JxA-0H-6uq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Name" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SYN-Ev-a3k">
+                                <rect key="frame" x="20" y="330" width="374" height="55"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Ysh-tj-5c3"/>
+                                    <constraint firstAttribute="width" constant="374" id="xmq-RS-qoG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Enter the Name of Your Flashcard Set" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlS-dY-hu3">
+                                <rect key="frame" x="20" y="88" width="374" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf6-ku-max">
+                                <rect key="frame" x="77.5" y="425" width="259" height="51"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="U4k-fq-KPd"/>
+                                    <constraint firstAttribute="height" constant="51" id="kt9-1C-iwY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Create Flashcard Set">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="pu4-e4-2M6" eventType="touchDown" id="M0T-pc-onb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sWd-sH-oCj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SYN-Ev-a3k" firstAttribute="centerX" secondItem="sWd-sH-oCj" secondAttribute="centerX" id="8DH-TB-IBl"/>
+                            <constraint firstItem="SYN-Ev-a3k" firstAttribute="top" secondItem="sWd-sH-oCj" secondAttribute="top" constant="242" id="FFt-AK-Dpt"/>
+                            <constraint firstItem="Mf6-ku-max" firstAttribute="centerX" secondItem="sWd-sH-oCj" secondAttribute="centerX" id="Nds-sT-IPi"/>
+                            <constraint firstItem="Mf6-ku-max" firstAttribute="centerY" secondItem="sWd-sH-oCj" secondAttribute="centerY" id="Stb-BR-e2B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="85Y-hQ-UWt"/>
+                    <connections>
+                        <outlet property="flashcardSetName" destination="SYN-Ev-a3k" id="BiK-tR-yOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svu-cc-oig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2826.0869565217395" y="582.58928571428567"/>
         </scene>
         <!--Flash Card Table-->
         <scene sceneID="ciM-I6-HL9">
@@ -289,12 +358,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgk-0d-lqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869.5652173913045" y="1532.8125"/>
+            <point key="canvasLocation" x="1870" y="1533"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit Card-->
         <scene sceneID="gzM-6D-IBL">
             <objects>
-                <viewController id="mCh-gP-PE4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubmitCard" id="mCh-gP-PE4" customClass="SubmitCard" customModule="smartcardsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fl3-GX-Vgj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -330,6 +399,9 @@
                                 <state key="normal" title="Submit Card">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="mCh-gP-PE4" eventType="touchDown" id="Fq0-cm-RWV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8W-pz-Vmj">
                                 <rect key="frame" x="20" y="188" width="374" height="21"/>
@@ -369,10 +441,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dGy-en-RE8"/>
+                    <connections>
+                        <outlet property="definitionField" destination="cQL-H0-bVH" id="I4t-Ur-4mj"/>
+                        <outlet property="termField" destination="eDc-7z-v29" id="oS9-rz-JaR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKV-oK-9Lx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2879.7101449275365" y="1532.8125"/>
+            <point key="canvasLocation" x="2809" y="1533"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OKs-lP-3CA">
