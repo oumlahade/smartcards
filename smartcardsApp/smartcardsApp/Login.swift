@@ -43,13 +43,17 @@ class Login: UIViewController {
                         case .success(let value as [String: Any]):
                             if (value["message"] as! String == "user login successful") {
                                 // if username and password are valid:
-                                print(user)
-                                print(pass)
+                                print("Authenticated with:")
+                                print("\t\(user)")
+                                print("\t\(pass)")
                                 self.defaults.set(user, forKey: "username")
                                 self.defaults.set(pass, forKey: "password")
                                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
                             }
                             else {
+                                print("Failed Authentication with:")
+                                print("\t\(user)")
+                                print("\t\(pass)")
                                 let alert = UIAlertController(title: "Invalid Username or Password", message: "Your username or password is incorrect", preferredStyle: .alert)
                                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                                 self.present(alert, animated: true)

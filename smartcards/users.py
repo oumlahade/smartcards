@@ -22,6 +22,7 @@ def signup():
         ret = {
             'message': 'user created'
         }
+    print(udb)
     return jsonify(ret), 200
 
 @app.route('/user.login', methods=['POST'])
@@ -43,6 +44,7 @@ def login():
         ret = {
                 'message': 'user login unsuccessful'
             }
+    print(udb)
     return jsonify(ret), 200
 
 @app.route('/user.updateAccount', methods=['POST'])

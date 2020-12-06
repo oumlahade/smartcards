@@ -11,7 +11,7 @@ class FlashcardSets: UIViewController , UITableViewDataSource {
 
     @IBOutlet var table: UITableView!
     
-    let data = ["First", "Second", "Third", "Fourth", "Fifth"]
+    let data = ["Biology Unit 1 Vocab", "Chemistry Practice Problems", "Math Symbol Definitions", "Spanish Vocab", "Thermodynamics Laws"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

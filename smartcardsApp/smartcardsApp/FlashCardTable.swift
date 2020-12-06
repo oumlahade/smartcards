@@ -11,7 +11,7 @@ class FlashCardTable: UIViewController , UITableViewDataSource {
 
     @IBOutlet var table: UITableView!
     
-    let data = ["1", "2", "3", "4", "5"]
+    let data = ["hola", "biblioteca", "como estas", "pantalones", "zapatos"]
     
     var father: String = ""
     
