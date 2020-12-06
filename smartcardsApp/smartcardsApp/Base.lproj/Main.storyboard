@@ -41,7 +41,7 @@
                                     <segue destination="tLL-gy-pdx" kind="show" id="cOX-pH-Zcj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-Lz-JtK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9E-Lz-JtK">
                                 <rect key="frame" x="20" y="544" width="374" height="51"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -61,9 +61,11 @@
                         <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="9Rt-aV-A8y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Or-Ko-2kO"/>
+                            <constraint firstItem="h9E-Lz-JtK" firstAttribute="top" secondItem="KJ3-wi-L3t" secondAttribute="bottom" constant="123" id="MDC-C9-kO1"/>
                             <constraint firstItem="KJ3-wi-L3t" firstAttribute="top" secondItem="9Rt-aV-A8y" secondAttribute="bottom" constant="89" id="MwQ-Hk-nb2"/>
                             <constraint firstItem="9Rt-aV-A8y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="cuq-ig-PjV"/>
                             <constraint firstItem="KJ3-wi-L3t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kxb-bb-0PW"/>
+                            <constraint firstItem="h9E-Lz-JtK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w9R-NB-itC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="61q-fH-6QD"/>
@@ -79,6 +81,12 @@
                     <view key="view" contentMode="scaleToFill" id="EbH-i6-wPh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eCi-yI-Vd5">
+                                <rect key="frame" x="20" y="104" width="374" height="758"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="u39-1s-kiA"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
                     </view>
@@ -86,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evc-V4-Ill" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="981"/>
+            <point key="canvasLocation" x="50.724637681159422" y="980.35714285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d2m-Bg-aei">
@@ -96,13 +104,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZZ-M9-FUg">
-                                <rect key="frame" x="78" y="289" width="259" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZZ-M9-FUg">
+                                <rect key="frame" x="77.5" y="289" width="259" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="I6c-X6-KyH"/>
+                                    <constraint firstAttribute="height" constant="34" id="fST-Nx-SSm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YM6-jY-00u">
-                                <rect key="frame" x="78" y="381" width="259" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YM6-jY-00u">
+                                <rect key="frame" x="77.5" y="381" width="259" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="dZ1-uw-qaz"/>
+                                    <constraint firstAttribute="width" constant="259" id="qrI-tZ-6Ax"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -159,7 +177,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AF5-V4-MkE"/>
+        <segue reference="aU0-AQ-pxp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
@@ -167,6 +185,9 @@
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
