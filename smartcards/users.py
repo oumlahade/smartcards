@@ -12,6 +12,12 @@ def signup():
     req = request.json
     username = req['username']
     password = req['password']
+    if username in db:
+        ret = {
+            'message': 'username already taken'
+        }
+        # Find out how to make them repick
+        
     db[username] = password
     ret = {
         'message': 'user created'
