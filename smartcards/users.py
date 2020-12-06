@@ -12,6 +12,12 @@ def signup():
     req = request.json
     username = req['username']
     password = req['password']
+    if username in db:
+        ret = {
+            'message': 'username already taken'
+        }
+        # Find out how to make them repick
+        
     db[username] = password
     ret = {
         'message': 'user created'
@@ -53,7 +59,22 @@ def update_account():
 @app.route('/user.deleteAccount', methods=['POST'])
 def delete_account():
     req = request.json
-    ret = {
-        'message': 'user updated'
-    }
+    username = req['username']
+    password = req['password']
+    print(db)
+    if username in db:
+        if password in db[username]:
+            del db[username]
+            ret = {
+                'message': 'user deletion successful'
+            }
+        else:
+            ret = {
+                'message': 'user deletion unsuccessful'
+            }
+    else:
+        ret = {
+            'message': 'user deletion unsuccessful'
+        }
+    print(db)
     return jsonify(ret), 200
