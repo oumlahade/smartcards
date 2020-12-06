@@ -576,6 +576,114 @@
             </objects>
             <point key="canvasLocation" x="999" y="1533"/>
         </scene>
+        <!--Card-->
+        <scene sceneID="mmx-B6-h2K">
+            <objects>
+                <viewController storyboardIdentifier="card" id="TfY-tI-bGJ" customClass="Card" customModule="smartcardsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4NQ-ic-PH2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbd-iq-e33">
+                                <rect key="frame" x="77.5" y="741" width="259" height="51"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="PpK-YQ-m8z"/>
+                                    <constraint firstAttribute="height" constant="51" id="wxb-KT-6FY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Edit Card">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnV-v7-6Vw">
+                                <rect key="frame" x="55" y="182" width="135.5" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="n6p-b4-gXY"/>
+                                    <constraint firstAttribute="width" constant="135.5" id="nQc-Kw-oVD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ab-dK-WPB">
+                                <rect key="frame" x="55" y="262" width="339" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="84b-Ky-9jY"/>
+                                    <constraint firstAttribute="width" constant="339" id="QCi-Lg-w1R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnU-mL-9zP">
+                                <rect key="frame" x="55" y="412" width="248" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="jwc-Ev-PvA"/>
+                                    <constraint firstAttribute="height" constant="72" id="pAe-J6-wFk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="35" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-TU-xw4">
+                                <rect key="frame" x="55" y="492" width="339" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="FhB-0k-6ez"/>
+                                    <constraint firstAttribute="width" constant="339" id="zcX-eR-8Hg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HEf-zI-ocG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HEf-zI-ocG" firstAttribute="bottom" secondItem="qbd-iq-e33" secondAttribute="bottom" constant="21" id="GLR-RT-FnW"/>
+                            <constraint firstItem="pnV-v7-6Vw" firstAttribute="leading" secondItem="HEf-zI-ocG" secondAttribute="leading" constant="55" id="J77-7V-CnP"/>
+                            <constraint firstItem="jnU-mL-9zP" firstAttribute="top" secondItem="HEf-zI-ocG" secondAttribute="top" constant="324" id="O7Z-zG-fXx"/>
+                            <constraint firstItem="pnV-v7-6Vw" firstAttribute="top" secondItem="HEf-zI-ocG" secondAttribute="top" constant="94" id="UdM-wA-RLB"/>
+                            <constraint firstItem="Wc7-TU-xw4" firstAttribute="leading" secondItem="HEf-zI-ocG" secondAttribute="leading" constant="55" id="bMo-5V-y5L"/>
+                            <constraint firstItem="jnU-mL-9zP" firstAttribute="leading" secondItem="HEf-zI-ocG" secondAttribute="leading" constant="55" id="cij-Mc-LwX"/>
+                            <constraint firstItem="7Ab-dK-WPB" firstAttribute="top" secondItem="HEf-zI-ocG" secondAttribute="top" constant="174" id="ho5-fi-kPw"/>
+                            <constraint firstItem="7Ab-dK-WPB" firstAttribute="leading" secondItem="HEf-zI-ocG" secondAttribute="leading" constant="55" id="htk-69-uki"/>
+                            <constraint firstItem="Wc7-TU-xw4" firstAttribute="top" secondItem="HEf-zI-ocG" secondAttribute="top" constant="404" id="q9j-zp-LzT"/>
+                            <constraint firstItem="qbd-iq-e33" firstAttribute="centerX" secondItem="HEf-zI-ocG" secondAttribute="centerX" id="qB2-gG-TJw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j5t-h7-Teg"/>
+                    <connections>
+                        <outlet property="def" destination="Wc7-TU-xw4" id="Oxq-i2-pAF"/>
+                        <outlet property="term" destination="7Ab-dK-WPB" id="0qC-B5-Ogg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hgh-xW-cHA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.5652173913045" y="2228.5714285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LqC-d4-A0q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="2wm-Oz-qSG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="efs-WY-nZA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TVf-2w-G4K">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="TfY-tI-bGJ" kind="relationship" relationship="rootViewController" id="Ul6-sk-vcl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddm-Gq-Tms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998.55072463768124" y="2228.5714285714284"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cLf-bX-0ww"/>

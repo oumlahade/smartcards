@@ -41,5 +41,8 @@ class FlashCardTable: UIViewController , UITableViewDataSource {
 extension FlashCardTable: CardRowTableViewCellDelegate{
     func didTapButton(with title: String) {
         print(title)
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "card") as! Card
+        secondViewController.father = title
+        self.navigationController!.pushViewController(secondViewController, animated: true)
     }
 }
