@@ -93,10 +93,13 @@
                     <navigationItem key="navigationItem" id="61q-fH-6QD"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="S7x-z7-Nln" kind="show" identifier="authenticatedSegue" id="cLf-bX-0ww"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-731.8840579710145" y="582.58928571428567"/>
+            <point key="canvasLocation" x="-883" y="583"/>
         </scene>
         <!--Signup-->
         <scene sceneID="d2m-Bg-aei">
@@ -334,7 +337,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="S7x-z7-Nln" kind="show" id="pa4-YQ-3nl"/>
+                                    <action selector="login:" destination="aXN-yJ-Cm4" eventType="touchUpInside" id="ZgX-jE-DeT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUh-iX-xJZ">
@@ -365,6 +368,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mYV-Aj-N1I"/>
+                    <connections>
+                        <outlet property="password" destination="mpu-VV-LmR" id="mCk-aF-ViW"/>
+                        <outlet property="username" destination="KeD-vi-xkY" id="umq-CE-6zP"/>
+                        <segue destination="S7x-z7-Nln" kind="show" identifier="loginSegue" id="LPr-nn-Czc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPu-hc-0OY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -394,7 +402,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7xS-6S-yHT"/>
+        <segue reference="cLf-bX-0ww"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
