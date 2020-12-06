@@ -14,6 +14,7 @@
 		2B62BF13257CAED200C66229 /* CardRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B62BF11257CAED200C66229 /* CardRowTableViewCell.xib */; };
 		2B62BF18257CCD9400C66229 /* SubmitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62BF17257CCD9400C66229 /* SubmitCard.swift */; };
 		2B62BF1D257CDC3D00C66229 /* FlashcardSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62BF1C257CDC3D00C66229 /* FlashcardSubmission.swift */; };
+		2B62BF3C257D64FA00C66229 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B62BF3B257D64FA00C66229 /* Card.swift */; };
 		2B96D54F257C1C60006D064A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D54E257C1C60006D064A /* AppDelegate.swift */; };
 		2B96D551257C1C60006D064A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D550257C1C60006D064A /* SceneDelegate.swift */; };
 		2B96D553257C1C60006D064A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D552257C1C60006D064A /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 		2B62BF11257CAED200C66229 /* CardRowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardRowTableViewCell.xib; sourceTree = "<group>"; };
 		2B62BF17257CCD9400C66229 /* SubmitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitCard.swift; sourceTree = "<group>"; };
 		2B62BF1C257CDC3D00C66229 /* FlashcardSubmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSubmission.swift; sourceTree = "<group>"; };
+		2B62BF3B257D64FA00C66229 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2B96D54B257C1C60006D064A /* smartcardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartcardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B96D54E257C1C60006D064A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B96D550257C1C60006D064A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				2B62BF11257CAED200C66229 /* CardRowTableViewCell.xib */,
 				2B62BF17257CCD9400C66229 /* SubmitCard.swift */,
 				2B62BF1C257CDC3D00C66229 /* FlashcardSubmission.swift */,
+				2B62BF3B257D64FA00C66229 /* Card.swift */,
 			);
 			path = smartcardsApp;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				2B96D5DF257C62A5006D064A /* FlashcardSets.swift in Sources */,
 				2B96D54F257C1C60006D064A /* AppDelegate.swift in Sources */,
 				2B96D5DA257C6269006D064A /* Signup.swift in Sources */,
+				2B62BF3C257D64FA00C66229 /* Card.swift in Sources */,
 				2B96D551257C1C60006D064A /* SceneDelegate.swift in Sources */,
 				2B62BF0C257CADA800C66229 /* FlashCardTable.swift in Sources */,
 				2B62BF18257CCD9400C66229 /* SubmitCard.swift in Sources */,
