@@ -7,22 +7,24 @@ from smartcards.application import app
 from smartcards.database import userDB as udb
 from smartcards.database import flashcardDB as fcdb
 
+
 @app.route('/user.signup', methods=['POST'])
 def signup():
     req = request.json
     username = req['username']
     password = req['password']
+
     if username in udb:
-        ret = {
-            'message': 'username already taken'
-        }
+        message = 'username already taken'
     else:       
         udb[username] = password
         fcdb[username] = {}
-        ret = {
-            'message': 'user created'
-        }
+        message = 'user created'
+
     print(udb)
+    ret = {
+        'message': message
+    }
     return jsonify(ret), 200
 
 @app.route('/user.login', methods=['POST'])
@@ -33,18 +35,19 @@ def login():
 
     if loginUsername in udb:
         if loginPassword == udb[loginUsername]:
-            ret = {
-                'message': 'user login successful'
-            }
+            message = 'user login successful'
+            print('Username matches password')
         else:
-            ret = {
-                'message': 'user login unsuccessful'
-            }
+            message = 'user login unsuccessful'
+            print('Password does not match username')
     else:
-        ret = {
-                'message': 'user login unsuccessful'
-            }
+        message = 'user login unsuccessful'
+        print('Username not found')
+
     print(udb)
+    ret = {
+        'message': message
+    }
     return jsonify(ret), 200
 
 @app.route('/user.updateAccount', methods=['POST'])

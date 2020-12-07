@@ -8,22 +8,23 @@ from smartcards.database import flashcardDB as fcdb
 
 
 @app.route('/flashcardSet.create', methods=['POST'])
-def create():
+def createStack():
     '''
     Creates a flashcard set
     '''
     req = request.json
     stackName = req['stackname']
     username = req['username']
+
     if stackName in fcdb[username].keys():
-        ret = {
-            'message': 'stack name already taken'
-        }
+        message = 'stack name already taken'
     else:
         fcdb[username][stackName] = {}
-        ret = {
-            'message': 'flashcard set created'
-        }
+        message = 'flashcard set created'
+
+    ret = {
+        'message': message
+    }
     return jsonify(ret), 200
 
 @app.route('/flashcardSet.deleteStack', methods=['POST'])
@@ -34,16 +35,16 @@ def deleteStack():
     req = request.json
     stackName = req['stackname']
     username = req['username']
+
     if stackName in fcdb[username].keys():
         del fcdb[username][stackName]
-        ret = {
-        'message': 'flashcard set deleted'
-        }
+        message = 'flashcard set deleted'
     else:
-        ret = {
-            'message': 'Stack could not be deleted'
-        }
+        message = 'stack could not be deleted'
 
+    ret = {
+        'message': message
+    }
     return jsonify(ret), 200
 
 @app.route('/flashcard.add', methods=['POST'])
@@ -56,16 +57,16 @@ def add():
     username = req['username']
     question = req['question']
     answer = req['answer']
+
     if stackName in fcdb[username].keys():
         fcdb[username][stackName][question] = answer
-        ret = {
-            'message': 'flashcard added'
-        }
+        message = 'flashcard added'
     else:
-        ret = {
-            'message': 'stackname could not be fetched'
-        }
+        message = 'stackname could not be fetched'
 
+    ret = {
+        'message': message
+    }
     return jsonify(ret), 200
 
 @app.route('/flashcard.delete', methods=['POST'])
@@ -77,9 +78,11 @@ def delete():
     stackName = req['stackname']
     username = req['username']
     question = req['question']
+
     if (stackName in fcdb[username].keys()):
         if (question in fcdb[username][stackName].keys()):
             del fcdb[username][stackName][question]
+
     ret = {
         'message': 'flashcard deleted'
     }
@@ -91,14 +94,14 @@ def displayStacks():
     req = request.json
     stackName = req['stackname']
     username = req['username']
-    String = ""
+
+    string = ""
     print(fcdb[username].keys())
     for key in fcdb[username].keys():
-        String = String + " " + key
-
+        string = string + " " + key
 
     ret = {
-        "messages": String
+        "messages": string
     }
     return jsonify(ret), 200
 
@@ -116,14 +119,14 @@ def displayCards():
     stackName = req['stackname']
     username = req['username']
     question = req['question']
-    String = ""
+
+    string = ""
     for x in fcdb[username][stackName]:
         value = fcdb[username][stackName][x]
         key = get_key(value, fcdb[username][stackName])
-        String = String + key + ", " + value + "     "
-
+        string = string + key + ", " + value + "     "
 
     ret = {
-        "messages": String
+        "messages": string
     }
     return jsonify(ret), 200
