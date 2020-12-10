@@ -51,6 +51,7 @@ class Login: UIViewController {
                                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
                             }
                             else {
+                                print(value["message"]!)
                                 print("Failed Authentication with:")
                                 print("\t\(user)")
                                 print("\t\(pass)")

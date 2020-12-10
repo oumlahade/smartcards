@@ -21,7 +21,7 @@ def signup():
         fcdb[username] = {}
         message = 'user created'
 
-    print(udb)
+    print(f'User created. udb: {udb}')
     ret = {
         'message': message
     }
@@ -36,13 +36,13 @@ def login():
     if loginUsername in udb:
         if loginPassword == udb[loginUsername]:
             message = 'user login successful'
-            print('Username matches password')
+            print(f'Username {loginUsername} matches password {loginPassword}. udb: {udb}')
         else:
             message = 'user login unsuccessful'
-            print('Password does not match username')
+            print(f'Password {loginPassword} does not match username {loginUsername}. udb: {udb}')
     else:
         message = 'user login unsuccessful'
-        print('Username not found')
+        print(f'Username {loginUsername} not found. udb: {udb}')
 
     print(udb)
     ret = {
