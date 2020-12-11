@@ -243,18 +243,58 @@
         <!--User Information-->
         <scene sceneID="ezb-1e-c5H">
             <objects>
-                <viewController id="dpF-kg-kJo" sceneMemberID="viewController">
+                <viewController id="dpF-kg-kJo" customClass="UserInformation" customModule="smartcardsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zxg-aK-Dzd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga6-n4-5QM">
+                                <rect key="frame" x="79" y="437.5" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faS-Ye-wKe">
+                                <rect key="frame" x="79" y="473.5" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5b-DV-l2o">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvB-aO-AaM">
+                                <rect key="frame" x="186" y="474" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yDV-8T-pCy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M5b-DV-l2o" firstAttribute="centerY" secondItem="Zxg-aK-Dzd" secondAttribute="centerY" id="Nyg-F5-n88"/>
+                            <constraint firstItem="Ga6-n4-5QM" firstAttribute="centerY" secondItem="Zxg-aK-Dzd" secondAttribute="centerY" id="Po3-pp-Mmw"/>
+                            <constraint firstItem="M5b-DV-l2o" firstAttribute="centerX" secondItem="Zxg-aK-Dzd" secondAttribute="centerX" id="TfH-Cn-QoD"/>
+                            <constraint firstItem="Ga6-n4-5QM" firstAttribute="leading" secondItem="yDV-8T-pCy" secondAttribute="leading" constant="79" id="dSK-3Y-IWD"/>
+                            <constraint firstItem="gvB-aO-AaM" firstAttribute="top" secondItem="M5b-DV-l2o" secondAttribute="bottom" constant="15.5" id="iEy-DN-l8H"/>
+                            <constraint firstItem="gvB-aO-AaM" firstAttribute="centerX" secondItem="Zxg-aK-Dzd" secondAttribute="centerX" id="ltH-KU-a7D"/>
+                            <constraint firstItem="faS-Ye-wKe" firstAttribute="leading" secondItem="yDV-8T-pCy" secondAttribute="leading" constant="79" id="pqd-9Q-p3C"/>
+                            <constraint firstItem="faS-Ye-wKe" firstAttribute="top" secondItem="Ga6-n4-5QM" secondAttribute="bottom" constant="15" id="sMJ-wJ-oy4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="User Information" id="G0r-fs-Nme"/>
+                    <connections>
+                        <outlet property="password" destination="gvB-aO-AaM" id="pZJ-jV-D8s"/>
+                        <outlet property="username" destination="M5b-DV-l2o" id="WyY-MV-acC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD2-h9-yfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929" y="-109"/>
+            <point key="canvasLocation" x="2928.985507246377" y="-109.15178571428571"/>
         </scene>
         <!--Flashcard Sets-->
         <scene sceneID="aqn-hv-v4j">

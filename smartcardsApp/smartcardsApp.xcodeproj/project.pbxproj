@@ -27,6 +27,7 @@
 		2B96D5DF257C62A5006D064A /* FlashcardSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96D5DE257C62A5006D064A /* FlashcardSets.swift */; };
 		973763D6257CA07E001121C7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973763D5257CA07E001121C7 /* Login.swift */; };
 		973763ED257D56A9001121C7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 973763EC257D56A9001121C7 /* Alamofire */; };
+		97CF7BC02583439E00A96FA6 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF7BBF2583439E00A96FA6 /* UserInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		2B96D5D9257C6269006D064A /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		2B96D5DE257C62A5006D064A /* FlashcardSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSets.swift; sourceTree = "<group>"; };
 		973763D5257CA07E001121C7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		97CF7BBF2583439E00A96FA6 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				2B96D550257C1C60006D064A /* SceneDelegate.swift */,
 				2B96D552257C1C60006D064A /* ViewController.swift */,
 				2B96D554257C1C60006D064A /* Main.storyboard */,
+				97CF7BBF2583439E00A96FA6 /* UserInformation.swift */,
 				973763D5257CA07E001121C7 /* Login.swift */,
 				2B96D5DE257C62A5006D064A /* FlashcardSets.swift */,
 				2B96D5D9257C6269006D064A /* Signup.swift */,
@@ -311,6 +314,7 @@
 				2B62BF3C257D64FA00C66229 /* Card.swift in Sources */,
 				2B96D551257C1C60006D064A /* SceneDelegate.swift in Sources */,
 				2B62BF0C257CADA800C66229 /* FlashCardTable.swift in Sources */,
+				97CF7BC02583439E00A96FA6 /* UserInformation.swift in Sources */,
 				2B62BF18257CCD9400C66229 /* SubmitCard.swift in Sources */,
 				2B62BF1D257CDC3D00C66229 /* FlashcardSubmission.swift in Sources */,
 			);
