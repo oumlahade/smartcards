@@ -44,7 +44,6 @@ def login():
         message = 'user login unsuccessful'
         print(f'Username {loginUsername} not found. udb: {udb}')
 
-    print(udb)
     ret = {
         'message': message
     }
