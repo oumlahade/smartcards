@@ -20,8 +20,8 @@ def signup():
         udb[username] = password
         fcdb[username] = {}
         message = 'user created'
+        print(f'User created. udb: {udb}')
 
-    print(f'User created. udb: {udb}')
     ret = {
         'message': message
     }
