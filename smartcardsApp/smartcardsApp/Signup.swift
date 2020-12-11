@@ -12,6 +12,7 @@ class Signup: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -35,6 +36,7 @@ class Signup: UIViewController {
         }
         else {
             // do request to see if username and password is valid
+            spinner.startAnimating()
             let parameters = ["username": user, "password": pass]
                     
             AF.request("http://quickstart-1603319439833.ue.r.appspot.com/user.signup", method: .post, parameters: parameters, encoding: JSONEncoding.default)
@@ -47,11 +49,13 @@ class Signup: UIViewController {
                                 print(pass)
                                 self.defaults.set(user, forKey: "username")
                                 self.defaults.set(pass, forKey: "password")
+                                self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: "signupSegue", sender: nil)
                             }
                             else {
                                 let alert = UIAlertController(title: "Invalid username", message: "That username has already been taken", preferredStyle: .alert)
                                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                                self.spinner.stopAnimating()
                                 self.present(alert, animated: true)
                             }
 
@@ -59,6 +63,7 @@ class Signup: UIViewController {
                             print(error)
                             let alert = UIAlertController(title: "Server Error", message: "The server encountered an error. Please try again later", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                            self.spinner.stopAnimating()
                             self.present(alert, animated: true)
 
                         default:

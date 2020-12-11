@@ -12,6 +12,7 @@ class Login: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -35,6 +36,7 @@ class Login: UIViewController {
         }
         else {
             // do request to see if username and password is valid
+            spinner.startAnimating()
             let parameters = ["username": user, "password": pass]
                     
             AF.request("http://quickstart-1603319439833.ue.r.appspot.com/user.login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
@@ -48,6 +50,7 @@ class Login: UIViewController {
                                 print("\t\(pass)")
                                 self.defaults.set(user, forKey: "username")
                                 self.defaults.set(pass, forKey: "password")
+                                self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
                             }
                             else {
@@ -57,6 +60,7 @@ class Login: UIViewController {
                                 print("\t\(pass)")
                                 let alert = UIAlertController(title: "Invalid Username or Password", message: "Your username or password is incorrect", preferredStyle: .alert)
                                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                                self.spinner.stopAnimating()
                                 self.present(alert, animated: true)
                             }
 
@@ -64,6 +68,7 @@ class Login: UIViewController {
                             print(error)
                             let alert = UIAlertController(title: "Server Error", message: "The server encountered an error. Please try again later", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                            self.spinner.stopAnimating()
                             self.present(alert, animated: true)
 
                         default:

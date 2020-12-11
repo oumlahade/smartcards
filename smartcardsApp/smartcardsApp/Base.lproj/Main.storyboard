@@ -154,6 +154,9 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="yRJ-gw-mQ4">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o8x-r5-1Sd"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
@@ -161,6 +164,8 @@
                             <constraint firstItem="Fbd-8x-AMA" firstAttribute="centerX" secondItem="0cJ-15-Z1Z" secondAttribute="centerX" id="669-uA-kOY"/>
                             <constraint firstItem="bZZ-M9-FUg" firstAttribute="centerX" secondItem="o8x-r5-1Sd" secondAttribute="centerX" id="7QU-Xp-FVC"/>
                             <constraint firstItem="YM6-jY-00u" firstAttribute="top" secondItem="bZZ-M9-FUg" secondAttribute="bottom" constant="58" id="ARB-I6-04i"/>
+                            <constraint firstItem="yRJ-gw-mQ4" firstAttribute="centerX" secondItem="0cJ-15-Z1Z" secondAttribute="centerX" id="DIh-DU-r7w"/>
+                            <constraint firstItem="yRJ-gw-mQ4" firstAttribute="centerY" secondItem="0cJ-15-Z1Z" secondAttribute="centerY" id="ObV-5g-MrX"/>
                             <constraint firstItem="JCF-In-fhd" firstAttribute="top" secondItem="YM6-jY-00u" secondAttribute="bottom" constant="98" id="PMe-z1-t2d"/>
                             <constraint firstItem="JCF-In-fhd" firstAttribute="centerX" secondItem="o8x-r5-1Sd" secondAttribute="centerX" id="Th1-FM-eCi"/>
                             <constraint firstItem="Fbd-8x-AMA" firstAttribute="top" secondItem="o8x-r5-1Sd" secondAttribute="top" constant="88" id="Ufp-d9-ybb"/>
@@ -175,6 +180,7 @@
                     <navigationItem key="navigationItem" id="6Nd-I8-GcQ"/>
                     <connections>
                         <outlet property="password" destination="YM6-jY-00u" id="KAZ-Nt-LBu"/>
+                        <outlet property="spinner" destination="yRJ-gw-mQ4" id="I8Q-sf-zKd"/>
                         <outlet property="username" destination="bZZ-M9-FUg" id="VHR-qL-PCY"/>
                         <segue destination="PV5-8o-GD3" kind="show" identifier="signupSegue" id="EbK-mS-9LW"/>
                     </connections>
@@ -618,6 +624,9 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="3nG-CK-AKg">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bvf-40-EUi"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
@@ -627,17 +636,20 @@
                             <constraint firstItem="mpu-VV-LmR" firstAttribute="top" secondItem="KeD-vi-xkY" secondAttribute="bottom" constant="58" id="5dN-nw-Bow"/>
                             <constraint firstItem="OUh-iX-xJZ" firstAttribute="top" secondItem="Bvf-40-EUi" secondAttribute="top" constant="88" id="DYK-v8-qB2"/>
                             <constraint firstItem="KeD-vi-xkY" firstAttribute="centerX" secondItem="Bvf-40-EUi" secondAttribute="centerX" id="GYw-c8-WFj"/>
+                            <constraint firstItem="3nG-CK-AKg" firstAttribute="centerY" secondItem="uMu-2d-33W" secondAttribute="centerY" id="JaS-mV-rYR"/>
                             <constraint firstItem="dVg-fh-fOa" firstAttribute="centerX" secondItem="Bvf-40-EUi" secondAttribute="centerX" id="T5v-gj-fA1"/>
                             <constraint firstItem="KeD-vi-xkY" firstAttribute="top" secondItem="Bvf-40-EUi" secondAttribute="top" constant="201" id="bkw-Mf-1Ht"/>
                             <constraint firstItem="dVg-fh-fOa" firstAttribute="top" secondItem="mpu-VV-LmR" secondAttribute="bottom" constant="98" id="fDK-6Z-g8S"/>
                             <constraint firstItem="dVg-fh-fOa" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="frH-IP-eQ6"/>
                             <constraint firstItem="OUh-iX-xJZ" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="nLu-IY-Bc7"/>
                             <constraint firstItem="KeD-vi-xkY" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="ol3-GG-w7A"/>
+                            <constraint firstItem="3nG-CK-AKg" firstAttribute="centerX" secondItem="uMu-2d-33W" secondAttribute="centerX" id="uXg-cQ-gk1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mYV-Aj-N1I"/>
                     <connections>
                         <outlet property="password" destination="mpu-VV-LmR" id="mCk-aF-ViW"/>
+                        <outlet property="spinner" destination="3nG-CK-AKg" id="Qby-mh-aWE"/>
                         <outlet property="username" destination="KeD-vi-xkY" id="umq-CE-6zP"/>
                         <segue destination="PV5-8o-GD3" kind="show" identifier="loginSegue" id="kaH-u9-Cdu"/>
                     </connections>
@@ -782,7 +794,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OK1-4Z-vWW"/>
-        <segue reference="pLK-WW-po2"/>
+        <segue reference="kaH-u9-Cdu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
