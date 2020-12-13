@@ -39,7 +39,7 @@ class Login: UIViewController {
             spinner.startAnimating()
             let parameters = ["username": user, "password": pass]
                     
-            AF.request("http://quickstart-1603319439833.ue.r.appspot.com/user.login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            AF.request("\(Http.url)/user.login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
                 .responseJSON { response in
                     switch response.result {
                         case .success(let value as [String: Any]):

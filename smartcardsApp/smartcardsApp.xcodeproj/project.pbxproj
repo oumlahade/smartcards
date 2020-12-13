@@ -28,6 +28,7 @@
 		973763D6257CA07E001121C7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973763D5257CA07E001121C7 /* Login.swift */; };
 		973763ED257D56A9001121C7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 973763EC257D56A9001121C7 /* Alamofire */; };
 		97CF7BC02583439E00A96FA6 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF7BBF2583439E00A96FA6 /* UserInformation.swift */; };
+		97CF7BC52586120200A96FA6 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CF7BC42586120200A96FA6 /* Http.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		2B96D5DE257C62A5006D064A /* FlashcardSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSets.swift; sourceTree = "<group>"; };
 		973763D5257CA07E001121C7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		97CF7BBF2583439E00A96FA6 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		97CF7BC42586120200A96FA6 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				973763D5257CA07E001121C7 /* Login.swift */,
 				2B96D5DE257C62A5006D064A /* FlashcardSets.swift */,
 				2B96D5D9257C6269006D064A /* Signup.swift */,
+				97CF7BC42586120200A96FA6 /* Http.swift */,
 				2B96D557257C1C61006D064A /* Assets.xcassets */,
 				2B96D559257C1C61006D064A /* LaunchScreen.storyboard */,
 				2B96D55C257C1C61006D064A /* Info.plist */,
@@ -317,6 +320,7 @@
 				97CF7BC02583439E00A96FA6 /* UserInformation.swift in Sources */,
 				2B62BF18257CCD9400C66229 /* SubmitCard.swift in Sources */,
 				2B62BF1D257CDC3D00C66229 /* FlashcardSubmission.swift in Sources */,
+				97CF7BC52586120200A96FA6 /* Http.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
